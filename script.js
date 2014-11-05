@@ -1,4 +1,5 @@
 //Based on the jquery api: https://github.com/boye/PAPI/blob/master/jquery.papi.js
+//http://www.postcodeapi.nu/#request
 
 (function (d) {
 	"use strict";
@@ -10,7 +11,7 @@
 		inputZipcodeDigits: '[data-input-zipcode-digits]',
 		inputZipcodeLetters: '[data-input-zipcode-letters]',
 		inputTown: '[data-input-town]',
-		apiKey: '502066f7c549b6f86bd4f34c5bd8fd7f312706c4'
+		apiKey: '4p1K3y' /*replace with your own*/
 	};
 
 	function Requestaddress (element, options) {
