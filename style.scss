@@ -1,0 +1,114 @@
+/* Styles go here */
+body {
+	background: #eee;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+table {
+	width: 100%;
+	display: block;
+	margin-bottom: 10px;
+
+	td,
+	th {
+		text-align: right;
+
+		&:first-child {
+			text-align: left;
+		}
+	}
+}
+
+form {
+	max-width: 500px;
+	margin: 0 auto;
+}
+fieldset {
+	padding: 1em;
+	border: 1px solid #ddd;
+	background: #fff;
+	font-family: "Helvetica Nueue", Arial, sans-serif;
+	margin-bottom: 20px;
+}
+legend {
+	float: left;
+	margin-bottom: 1em;
+}
+
+dl {
+	clear: both;
+}
+dt {
+	margin: 10px 0;
+}
+dd {
+	margin: 0;
+}
+
+label {
+	margin: 10px 0;
+}
+
+input {
+	font-size: 14px;
+	line-height: inherit;
+	border: 1px solid #ccc;
+	position: relative;
+	padding: 10px;
+	color: #333;
+	width: 100%;
+
+	&.auto-width {
+		width: auto;
+	}
+
+	&:focus {
+		border: 1px solid #333;
+		outline: none;
+	}
+	&:focus:invalid {
+		& + .hint {
+			display: block;
+		}
+
+	}
+	&:valid {
+		border: 1px solid green;
+
+		&:before {
+			content: '';
+			position: absolute;
+			right: -20px;
+			display: block;
+			width: 10px;
+			height: 10px;
+			background: green;
+		}
+	}
+}
+
+button {
+	float: right;
+	font-size: 16px;
+	padding: 5px 10px;
+	background: #b1c4df;
+	border: 1px solid #3a5eaf;
+	color: #3a5eaf;
+}
+
+button.primary {
+	color: #fff;
+	padding: 10px 20px;
+	border: 1px solid rgb(216, 117, 28);
+	background: #FF7800;
+}
+
+.hint {
+	font-size: 80%;
+	display: none;
+	border: 1px solid blue;
+	padding: 5px;
+	margin: 5px 0;
+	width: auto;
+}
